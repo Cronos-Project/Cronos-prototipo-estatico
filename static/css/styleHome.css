@@ -1,0 +1,315 @@
+:root {
+    --azul_element: #1C0D60;
+    --azul_background:  #000110;
+    --cinza-background: rgba(169, 160, 160, 0.452);
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Post No Bills Jaffna Regular'), url('../fonts/PostNoBillsJaffna-Regular.woff') format('woff');
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.cabecalho {
+    background-color: var(--azul_element);
+    padding: 12px 24px;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 230px; 
+    height: auto; 
+}
+
+.iconlateral {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+.iconlateral img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* opcional: deixa os ícones brancos */
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.iconlateral img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;       
+    margin: 3em;
+    gap: 20px;  
+    align-items: center;
+    justify-content: center; 
+           
+}
+
+
+.botAssistente {
+    background-color: var(--azul_element);
+    font-family: 'Post No Bills Jaffna Regular';
+    font-weight: 900;
+    color: white;
+    /*width: 100%;*/
+    max-width: 500px;          
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;            
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    gap: 8px;
+}
+
+
+
+p {
+    font-size: 1.4em;
+}
+
+.iconeRobo {
+   height: 80px;
+   width: 80px;
+   color: white;
+}
+
+
+body {
+    background-color: var(--azul_background);
+}
+
+.iconeRobo {
+    margin-left: 60px;
+}
+
+.carrossel-container {
+    width: 90%;
+    margin: 0 auto 2em auto;
+}
+
+.carrossel-container h2 {
+    color: #fff;
+    font-family: 'Post No Bills Jaffna Regular', sans-serif;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding-bottom: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #1C0D60 #000110;
+}
+
+.carrossel::-webkit-scrollbar {
+    height: 8px;
+}
+.carrossel::-webkit-scrollbar-thumb {
+    background: #1C0D60;
+    border-radius: 4px;
+}
+
+.card {
+    background: #181c2f;
+    border-radius: 16px;
+    min-width: 180px;
+    max-width: 200px;
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px #0002;
+    padding: 0 0 1em 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 140px;
+    background: #eee;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 0.5em;
+}
+
+.card-info {
+    padding: 0 1em;
+    width: 100%;
+}
+
+.card-nome {
+    font-family: 'Post No Bills Jaffna Regular', sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.card-preco {
+    color: #ccc;
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+.card-rating {
+    color: #ffd700;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.card-link {
+    color: #fff;
+    font-size: 0.95em;
+    text-decoration: none;
+    margin-top: 0.5em;
+    display: inline-block;
+    transition: color 0.2s;
+}
+.card-link:hover {
+    color: #ffd700;
+}
+
+.star {
+    color: #ffd700;
+    font-size: 1.1em;
+}
+
+.carrossel-container {
+    font-family: 'Post No Bills Jaffna Regular' ;
+    
+    font-weight: bolder;
+}
+
+
+@media (max-width: 1024px) {
+    .container2 {
+        padding: 0 16px;
+    }
+
+    .iconlateral {
+        gap: 24px;
+        margin-right: 40px;
+    }
+
+    .logo-img {
+        width: 180px;
+    }
+
+    .botAssistente {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .iconeRobo {
+        margin-left: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 12px 16px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .iconlateral {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-around;
+        padding: 12px 0;
+        background-color: var(--azul_element);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
+        margin-right: 0;
+        gap: 0;
+    }
+
+    .iconlateral img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .container {
+        margin: 2em 1em;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .botAssistente p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .carrossel-container h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    body {
+        padding-bottom: 60px; /* evita sobreposição da barra inferior */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 140px;
+    }
+
+    .iconlateral img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .card {
+        min-width: 160px;
+        flex: 0 0 160px;
+    }
+
+    .carrossel-container h2 {
+        font-size: 1em;
+    }
+
+    .botAssistente {
+        padding: 16px;
+    }
+
+    .botAssistente p {
+        font-size: 1em;
+    }
+}
+

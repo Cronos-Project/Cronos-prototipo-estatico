@@ -1,0 +1,261 @@
+:root {
+    --azul_element: #1C0D60;
+    --azul_background:  #000110;
+    --cinza-background: rgba(169, 160, 160, 0.452);
+}
+
+@font-face {
+    font-family: 'Post No Bills Jaffna Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Post No Bills Jaffna Regular'), url('../fonts/PostNoBillsJaffna-Regular.woff') format('woff');
+    }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.cabecalho {
+    background-color: var(--azul_element);
+    padding: 12px 24px;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 230px; 
+    height: auto; 
+}
+
+body {
+    background-color: var(--azul_background);
+}
+
+.container {
+    color: white;
+    font-family: 'Post No Bills Jaffna Regular';
+    
+}
+
+.sairIcon {
+    font-size: 30px;
+    text-align: right;
+    margin-right: 2.6em;
+}
+
+.user {
+    width: 100px;
+    height:100px;  
+}
+
+.imgUser {
+    margin-left: 50px;
+    background-color: white;
+    padding: 30px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+h1 , textarea {
+    margin-left: 60px;
+}
+
+
+textarea {
+    width: 40%;
+    height: 160px;
+    background: #a9a0a0;
+    border: 3px solid #1C0D60;
+    border-radius: 24px;
+   
+    display: block;
+    font-family: 'Post No Bills Jaffna Regular', sans-serif;
+    font-size: 1.2em;
+    color: #444;
+    padding: 8px 12px; /* padding menor para aproximar do canto */
+    resize: none;
+    box-sizing: border-box;
+}
+
+
+textarea::placeholder {
+    color: #666;
+    opacity: 1;
+    font-family: 'Post No Bills Jaffna Regular', sans-serif;
+    font-size: 1.2em;
+}
+
+.agendamento-botoes {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-agendamento {
+    background: #4d3ca6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-size: 1.7em;
+    font-family: 'Post No Bills Jaffna Regular', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.btn-agendamento:hover {
+    background: #372a7c;
+}
+
+.btn-agendamento.cancelar {
+    background: #6d5ca6;
+}
+
+.btn-agendamento.cancelar:hover {
+    background: #4d3ca6;
+}
+
+.btn-agendamento , textarea {
+    margin-top: 20px;
+}
+
+
+@media (min-width: 1025px) {
+  .sairIcon.sair-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+    .container2 {
+        padding: 0 16px;
+    }
+
+    .logo-img {
+        width: 180px;
+    }
+
+    textarea {
+        width: 60%;
+        margin-left: 40px;
+    }
+
+    .btn-agendamento {
+        margin-left: 40px;
+    }
+
+    .imgUser {
+        margin-left: 40px;
+    }
+
+    h1 {
+        margin-left: 40px;
+    }
+
+    .sairIcon.sair-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+
+    /* Aqui estava o erro: faltou o ponto antes da classe sair-desktop */
+    .sairIcon.sair-desktop {
+        display: none;
+    }
+
+    .sairIcon.sair-mobile {
+        display: flex;
+        justify-content: center;
+        font-size: 1.6em;
+        text-align: center;
+        margin-top: 12px;
+        color: white;
+        margin-left: 65px;
+    }
+
+    .imgUser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .user {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    h1,
+    textarea,
+    .btn-agendamento {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .agendamento-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 130px;
+    }
+
+    textarea {
+        height: 140px;
+        font-size: 1em;
+    }
+
+    .btn-agendamento {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .imgUser {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
+}
+
