@@ -1,4 +1,4 @@
-# 💈 **[Cronos] — Projeto Integrador ADS 501**
+# 💈 **Cronos — Projeto Integrador ADS 501**
 
 > **Disciplina:** ADS 501 — Design de Interação e Projeto Integrador  
 > **Curso:** Análise e Desenvolvimento de Sistemas  
