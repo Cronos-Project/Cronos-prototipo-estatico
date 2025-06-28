@@ -31,8 +31,8 @@ A proposta visa modernizar a presença digital das barbearias, oferecendo uma ex
 - **Missão:** Simplificar a gestão de agendamentos para barbearias, automatizando a comunicação com clientes via Telegram e futuramente WhatsApp, além de oferecer um site moderno, responsivo e intuitivo para ampliar a presença digital da barbearia, facilitar o agendamento online e fortalecer o relacionamento com os clientes.
 - **Modelo de Negócios:** 
 ![Modelo de Negócio](images/modelo.png)
-- **Logotipo:** 
-![Logotipo Cronos](images/Cronos_logo.png)
+- **Mapa de Empatia:** 
+![Logotipo Cronos](images/empatia.png)
 
 ---
 
