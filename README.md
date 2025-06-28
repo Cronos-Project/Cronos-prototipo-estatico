@@ -18,6 +18,12 @@ A proposta visa modernizar a presença digital das barbearias, oferecendo uma ex
 
 ---
 
+### 🎨 **Que tal dar uma olhada no nosso Figma?**
+
+👉 [Clique aqui para acessar o protótipo no Figma](https://www.figma.com/design/akoDZN6BD3FbpCyvoST5c4/Untitled?node-id=0-1&p=f&t=UpydMa4PvacYzxBa-0)
+
+---
+
 ## 🚀 **Tecnologias Utilizadas**
 
 - **HTML5 & CSS3:** estruturação e estilização das páginas  
@@ -107,7 +113,7 @@ Este projeto é acadêmico, desenvolvido para fins educacionais no curso de **An
 
 ## 📞 **Contato**
 
-Para mais informações, entre em contato com a equipe pelo e-mail: [estudosprogramacao448@gmail.com]
+Para mais informações, entre em contato com a equipe pelo e-mail: [design1@univicosa.com.br]
 
 ---
 
