@@ -5,6 +5,7 @@
 > **Instituição:** Centro Universitário de Viçosa (Univiçosa) 
 >  
 > **Orientador(a):** Cristiane Aparecida Lana
+
 > **Co-orientador(a):** Carlos Henrique Tavares Brumatti
 
 ---
@@ -28,10 +29,10 @@ A proposta visa modernizar a presença digital das barbearias, oferecendo uma ex
 
 - **Nome:** Cronos
 - **Missão:** Simplificar a gestão de agendamentos para barbearias, automatizando a comunicação com clientes via Telegram e futuramente WhatsApp, além de oferecer um site moderno, responsivo e intuitivo para ampliar a presença digital da barbearia, facilitar o agendamento online e fortalecer o relacionamento com os clientes.
-- **Modelo de Negócio:** 
+- **Modelo de Negócios:** 
 ![Modelo de Negócio](images/modelo.png)
-- **Logotipo:** [Adicione uma imagem aqui ou link para o logotipo]
-![Logotipo Cronos](images/Cronos-logo.png)
+- **Logotipo:** 
+![Logotipo Cronos](images/Cronos_logo.png)
 
 ---
 
@@ -50,7 +51,7 @@ A proposta visa modernizar a presença digital das barbearias, oferecendo uma ex
 
 ## 📂 **Estrutura do Projeto**
 
-\\\
+```
 Cronos-prototipo-estatico
 ├── /home/              # Páginas HTML
 │   ├── agendamento.html
@@ -70,7 +71,7 @@ Cronos-prototipo-estatico
 │       ├── login.js
 │       └── signup.js
 └── README.md
-\\\
+```
 
 ---
 
